@@ -1,0 +1,36 @@
+:root{--frambuesa:#E0336F;--naranja:#FF8A3D;--crema:#FFEED6;--acento:#C2185B;--fondo:#FFF8F8;--tarjeta:#FFFFFF;--texto:#22191C;--suave:#6A5A5F;--borde:#F0DCE2}
+@media (prefers-color-scheme:dark){:root{--fondo:#191113;--tarjeta:#241A1D;--texto:#F0DEE1;--suave:#C9B4BA;--borde:#3C3235;--acento:#FFB1C8}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.65 "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:linear-gradient(135deg,#D62A68 0%,var(--frambuesa) 40%,var(--naranja) 110%);color:#fff}
+.cab{max-width:860px;margin:0 auto;padding:18px 16px;display:flex;align-items:center;gap:14px}
+.cab img{width:48px;height:48px;border-radius:12px}
+.cab a.marca{color:#fff;text-decoration:none;font-size:24px;font-weight:800;letter-spacing:.2px}
+.cab small{display:block;color:var(--crema);font-size:13px;font-weight:600}
+.cab .idioma{margin-left:auto;color:#fff;font-size:14px;font-weight:700;text-decoration:none;border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:4px 12px}
+.portada{max-width:860px;margin:0 auto;padding:28px 16px 40px}
+.portada h1{font-size:34px;line-height:1.15;margin:0 0 12px;font-weight:800}
+.portada p{color:#FFF1F3;font-size:18px;margin:0;max-width:620px}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+main.texto{max-width:760px}
+h1{font-size:30px;line-height:1.2;margin:8px 0 4px}
+h2{font-size:21px;margin:36px 0 8px;color:var(--acento)}
+h3{font-size:17px;margin:20px 0 4px}
+.fecha{color:var(--suave);font-size:14px}
+.nota{border-left:4px solid var(--naranja);background:color-mix(in srgb,var(--naranja) 14%,transparent);padding:12px 16px;border-radius:10px}
+a{color:var(--acento)}
+ul{padding-left:22px}
+li{margin:4px 0}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
+.tarjeta{background:var(--tarjeta);border:1px solid var(--borde);border-radius:18px;padding:16px 18px}
+.tarjeta h3{margin:0 0 6px}
+.tarjeta p{margin:0;color:var(--suave)}
+.capturas{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
+.capturas img{height:440px;width:auto;border-radius:18px;border:1px solid var(--borde);scroll-snap-align:start;flex:none}
+.botones{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.boton{display:inline-block;background:#fff;color:var(--frambuesa);text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:800}
+.boton.claro{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8)}
+footer{border-top:1px solid var(--borde);color:var(--suave);font-size:14px}
+footer div{max-width:860px;margin:0 auto;padding:20px 16px}
+@media (max-width:520px){.portada h1{font-size:28px}.capturas img{height:380px}}
